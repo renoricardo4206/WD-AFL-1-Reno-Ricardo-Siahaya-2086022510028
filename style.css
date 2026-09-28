@@ -1,0 +1,95 @@
+/* Tema custom di atas Bootstrap 5 (warna mengikuti gambar tugas) */
+body {
+    background: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrap {
+    max-width: 480px;
+    border-radius: 0;
+    border: 1px solid #9a9a9a;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .12);
+    overflow: hidden;
+}
+
+/* Tab bar: Employee | Office | Office-Employees */
+.tabbar {
+    background: #c9e6fb;
+    padding: 12px 18px;
+    border-bottom: 1px solid #8a8a8a;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.tabbar .nav-link {
+    color: #111;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 0 4px;
+}
+.tabbar .nav-link:hover { color: #111; text-decoration: underline; }
+.tabbar .nav-link.active { color: #111; }
+.tabbar .separator { color: #333; padding: 0 6px; }
+
+/* Judul */
+.page-title {
+    text-align: center;
+    color: #2f3f9c;
+    font-size: 28px;
+    font-weight: 500;
+    margin: 10px 0 18px;
+}
+.section-title {
+    text-align: center;
+    font-size: 19px;
+    font-weight: 700;
+    color: #222;
+    margin: 6px 0 12px;
+}
+
+/* Tabel gelap: List Karyawan / List Kantor */
+.list-table th,
+.list-table td {
+    background: #212529;
+    color: #fff;
+    border-color: #3a3d42;
+    font-size: 13px;
+    padding: 7px 10px;
+}
+.list-table thead th { font-weight: 700; }
+.delete-link { color: #6ea8fe; text-decoration: none; }
+.delete-link:hover { text-decoration: underline; }
+
+/* Tabel biru muda: Office-Employees */
+.light-table { border: 1px solid #b5b5b5; }
+.light-table th,
+.light-table td {
+    border: 1px solid #b5b5b5;
+    padding: 10px 12px;
+    font-size: 14px;
+}
+.light-table thead th { background: #99d6fc; font-weight: 500; }
+
+.empty-row { text-align: center; color: #999; font-style: italic; }
+
+/* Form relasi (dropdown Employee & Office) */
+.relation-form { max-width: 320px; margin: 30px auto 10px; }
+.relation-form .form-row { display: flex; align-items: center; }
+.relation-form .form-row + .form-row { margin-top: -1px; }
+.relation-form label { width: 90px; flex-shrink: 0; font-size: 14px; }
+.relation-form .form-select {
+    border: 1px solid #aaa;
+    border-radius: 0;
+    font-size: 14px;
+}
+.relation-form .form-select:focus { box-shadow: none; position: relative; z-index: 1; }
+
+.btn-save {
+    margin-top: 16px;
+    background: #99d6fc;
+    border: 1px solid #555;
+    border-radius: 7px;
+    color: #000;
+    padding: 7px 40px;
+    font-size: 16px;
+}
+.btn-save:hover { background: #7cc5f5; color: #000; }
